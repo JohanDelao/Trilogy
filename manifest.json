@@ -3,7 +3,12 @@
     "name":"Trilogy Url Copier",
     "description": "Quick Url Copy",
     "version": "1.0.0",
+<<<<<<< HEAD
     "icons": {"128": "Trilogy128x128.png"},
+=======
+    "icons": {"128": "Trilogy128.png"},
+    "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+>>>>>>> d13b16e109d3abbbc8d40c0d5873076747ba0fba
     "browser_action": {
         "default_icon":"Trilogy.png",
         "default_popup":"popup.html"
