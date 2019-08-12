@@ -7,6 +7,7 @@
     <title>Trilogy Url Copier</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="hover.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
@@ -21,7 +22,7 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         margin: 0;
-        min-height: 180px;
+        min-height: 200px;
         padding: 0;
         width: 384px;
     }
@@ -46,18 +47,19 @@
 
     .modal-header {
         align-items: center;
-        border-bottom: 0.5px solid #dadada;
-    }
-
-    .modal-content {
-        padding: 0 22px;
-
+        border-bottom: 0px;
+        background-color:rgb(75, 66, 66);
     }
 
     .modal-icons {
-        border-top: 0.5px solid #dadada;
         height: 50px;
         width: 100%;
+    }
+
+    .modal-content {
+        border: 0px;
+        padding-bottom: 17px;
+        padding-top: 10px;
     }
 
     .logo {
@@ -78,6 +80,7 @@
         display: flex;
         justify-content: space-between;
         padding: 10px 22px;
+        border-bottom: 0px;
     }
 
     .flex {
@@ -88,6 +91,7 @@
 
     .flex:hover {
         opacity: 0.4;
+        transition: 0.9s;
     }
 
     .flex .fa {
@@ -96,55 +100,87 @@
 
     }
 
+    p {
+        justify-content: center;
+        padding-bottom: 0px;
+        color: white;
+    }
+
+
+    /* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
 
     </style>
 
 </head>
 <body>
     <div class="modal-header">
-        <h1 class="logo">
+        <h1 class="logo" style="color: white">
             <img src="images/Trilogy150x150.png" alt="" class="logo-icon"> Trilogy 
             Url Copier <span class="version">(1.0.0)</span>
         </h1>
     </div>
-    <div class="modal-content">
+    <div class="modal-content text-center" style="background:rgb(117, 108, 108)">
         <p>Easily access Trilogy Url Copier</p>
-        <button type="button" class="btn btn-primary">Copy</button>
+        <form>
+                <div class="form-group row">
+                  <label for="inputEmail3" style="color: black" class="col-sm-2 col-form-label">Url</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputLink" placeholder="Url">
+                  </div>
+                </div>
+            </form>
     </div>
+   
     <div class="modal-icons">
-        <div class="flex-container">
+        <div class="flex-container" style="background: rgb(75, 66, 66)">
             <!-- twitter icon and links to twitter messages -->
             <div class="flex">
                 <div id="twitter"></div>
                 <a href="https://twitter.com/messages" target="_blank">
-                <i class="fa fa-twitter"></i>
+                <i class="fa fa-twitter hvr-pulse" style="color: rgb(66, 89, 218)"></i>
                 </a>
             </div>
             <!-- slack icon and links to slack messages -->
             <div class="flex">
                 <div id="slack"></div>
                     <a href="https://app.slack.com/client/TL6DE3YMA/CL6DE41L4" target="_blank">
-                    <i class="fa fa-slack"></i>
+                    <i class="fa fa-slack hvr-pulse" style="color: green"></i>
                     </a>
                 </div>
                 <!-- gmail icon and links to messages -->
                 <div class="flex">
                     <div id="gmail"></div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
-                        <i class="fa fa-google"></i>
+                        <i class="fa fa-google hvr-pulse" style="color: red"></i>
                         </a>
                     </div>
                     <!-- linkin icon and link to messages -->
                     <div class="flex">
                         <div id="linkedIn"></div>
                             <a href="https://www.linkedin.com/messaging/compose/" target="_blank">
-                            <i class="fa fa-linkedin"></i>
+                            <i class="fa fa-linkedin hvr-pulse" style="color: white"></i>
                             </a>
                         </div>
                     <div class="flex">
                         <div id="discord"></div>
                                 <a href="https://discordapp.com/channels/@me/600792617256747058" target="_blank">
-                                <i class="fa fa-comment"></i>
+                                <i class="fa fa-comment hvr-pulse"></i>
                                 </a>
                             </div>
         </div>

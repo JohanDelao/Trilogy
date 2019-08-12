@@ -6,3 +6,5 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     console.log(url);
     return url;
 });
+
+
