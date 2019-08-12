@@ -13,5 +13,7 @@
 //   // Initialize Firebase
 //   firebase.initializeApp(firebaseConfig);
 
-document.querySelector("p").innerText="test";
-alert(123);
+document.querySelectorAll('p')[5].innerText = 'something';
+
+document.getElementById('msg-form__contenteditable-placeholder-ember70').removeAttribute('data-placeholder');
+// alert(123);
