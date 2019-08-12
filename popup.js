@@ -7,7 +7,6 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     console.log(url)
     let link = document.getElementById("inputLink")
     link.value = url;
-
 });
 
 
