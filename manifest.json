@@ -4,7 +4,6 @@
     "description": "Quick Url Copy",
     "version": "1.0.0",
     "icons": {"128": "Trilogy128x128.png"},
-    "icons": {"128": "Trilogy128.png"},
     "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
     "browser_action": {
         "default_icon":"Trilogy.png",
