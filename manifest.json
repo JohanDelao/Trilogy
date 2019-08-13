@@ -17,7 +17,16 @@
     "https://mail.google.com/mail/u/0/#inbox?compose=new",
     "https://discordapp.com/channels/@me/600792617256747058"
     
-    ]
+    ],
+
+    "content_scripts": [
+        {
+        "matches":["https://www.linkedin.com/messaging/compose/"],
+		"js": ["jquery-3.4.1.js", "linkedIn.js"],
+		"run_at": "document_end"
+        }]
+
+    
 
     
 } 

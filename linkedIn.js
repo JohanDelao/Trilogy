@@ -13,7 +13,14 @@
 //   // Initialize Firebase
 //   firebase.initializeApp(firebaseConfig);
 
-document.querySelectorAll('p')[5].innerText = 'something';
 
-document.getElementById('msg-form__contenteditable-placeholder-ember70').removeAttribute('data-placeholder');
-// alert(123);
+$("#msg-form__contenteditable-placeholder-ember70").attr("data-placeholder", "");
+
+$(".msg-form__contenteditable.t-14").html("<p> grashopper </p>");
+// document.querySelector("#msg-form__contenteditable-placeholder-ember70").removeAttribute("data-placeholder")
+// document.querySelectorAll('p')[5].innerText = "whatever"
+// let newP = document.createElement('p');
+// newP.innerText = 'stuff';
+// $(".msg-form__contenteditable.t-14 t.black--light.t-normal.flex-grow-1.notranslate").append(newP)
+// document.getElementsByClassName
+// ('msg-form__contenteditable t-14 t-black--light t-normal flex-grow-1 notranslate').appendChild(newP);
