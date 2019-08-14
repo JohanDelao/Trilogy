@@ -19,7 +19,7 @@ $("a").click(function(){
 
 })
 
-$("col-sm-2").click(function(){
+$("#copyButton").click(function(){
     /* Get the text field */
     var copyText = document.getElementById("inputLink");
       
@@ -28,5 +28,20 @@ $("col-sm-2").click(function(){
   
     /* Copy the text inside the text field */
     document.execCommand("copy");
+
+})
+
+$("#youngGrasshopper").click(function(){
+     /* Get the text field */
+     var copyText = document.getElementById("inputLink");
+      
+     /* Select the text field */
+     copyText.select();
+   
+     /* Copy the text inside the text field */
+     document.execCommand("copy");
+
+     const element =  document.querySelector('#youngGrasshopper')
+     element.classList.add('animated', 'flash')
 
 })
