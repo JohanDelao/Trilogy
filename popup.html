@@ -12,8 +12,7 @@
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
     <script src="popup.js" defer></script>
-    <script src="app.js" ></script>
-    <script src="linkedIn.js"></script>
+    <script src="jquery-3.4.1.js"></script>
     
     
 
@@ -149,19 +148,23 @@
    
     <div class="modal-icons">
         <div class="flex-container" style="background: rgb(75, 66, 66)">
-            <!-- twitter icon and links to twitter messages -->
-            <div class="flex">
-                <div id="twitter"></div>
-                <a href="https://twitter.com/messages" target="_blank">
-                <i class="fa fa-twitter hvr-pulse" style="color: rgb(66, 89, 218)"></i>
-                </a>
-            </div>
             <!-- slack icon and links to slack messages -->
+
             <div class="flex">
-                <div id="slack"></div>
-                    <a href="https://app.slack.com/client/TL6DE3YMA/CL6DE41L4" target="_blank">
-                    <i class="fa fa-slack hvr-pulse" style="color: green"></i>
-                    </a>
+                    <div id="twitter"></div>
+                        <a href="https://twitter.com/messages/compose" target="_blank">
+                        <i class="fa fa-twitter hvr-pulse" style="color: lightblue"></i>
+                        </a>
+                    </div>
+            
+
+            <div class="flex">
+                <div id="slack">
+                        <a href="https://app.slack.com/client/TL6DE3YMA/CL6DE41L4" target="_blank">
+                            <i class="fa fa-slack hvr-pulse" style="color: green"></i>
+                            </a>
+                </div>
+                   
                 </div>
                 <!-- gmail icon and links to messages -->
                 <div class="flex">
