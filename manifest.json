@@ -3,10 +3,10 @@
     "name":"Trilogy Url Copier",
     "description": "Quick Url Copy",
     "version": "1.0.0",
-    "icons": {"128": "Trilogy128x128.png"},
+    "icons": {"128": "TrilogyV2_128x128.png"},
     "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://www.googleapis.com; object-src 'self'",
     "browser_action": {
-        "default_icon":"Trilogy.png",
+        "default_icon":"TrilogyV219x19.png",
         "default_popup":"popup.html"
     },
     "permissions": ["activeTab", 
