@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
     <link rel="stylesheet" href="hover.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-database.js"></script>
     <script src="popup.js" defer></script>
     <script src="jquery-3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://kit.fontawesome.com/b2a17ff2c4.js"></script>
     
     
 
@@ -84,9 +86,9 @@
     }
 
     .flex {
+
         opacity: 1;
         transition: opacity 0.2s ease-in-out;
-        width:120px
     }
 
     .flex:hover {
@@ -135,6 +137,68 @@
 .col-sm-10 {
     margin-bottom: 10px;
 }
+
+img.img.hvr-pulse {
+    height: 42px;
+    width: 42px;
+    padding-top: 4px;
+}
+
+img.img1.hvr-pulse {
+    height: 45px;
+    width: 42px;
+    padding-top: 4px;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: rgb(131, 122, 122);
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
     </style>
 
 </head>
@@ -142,11 +206,31 @@
     <div class="modal-header">
         <h1 class="logo" style="color: white">
             <img src="images/TrilogyV2_150x150.png" alt="" class="logo-icon" style="margin-right: 24px"> Trilogy 
-            Url Copier <span class="version">(1.0.0)</span>
+            Url Copier 
+            <div class="row">
+                <div class="col-10">
+                <span class="version">(1.0.0)</span>
+            </div>
+            <!-- <div class="col-2">
+            <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
+        </div> -->
+          <div class="col-2">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-ellipsis-v"></i></button>
+                <div class="dropdown-content">
+                  <a href="#" style="font-family: 'Open Sans', sans-serif; font-size: 15px"> Dark Mode </a>
+                </div>
+            </div>
+            </div>
+        </div>
         </h1>
     </div>
     <div class="modal-content text-center" style="background: whitesmoke">
-        <p>Easily access Trilogy Url Copier</p>
+        <div class="row">
+            <div class="col-12">
+                 <p>Copy your Urls with Ease</p> 
+                 </div>
+        </div>
         <form>
                 <div class="form-group row">
                   <label for="inputEmail3" style="color: black" class="col-sm-2 col-form-label">Url</label>
@@ -168,7 +252,7 @@
             <div class="flex">
                     <div id="twitter"></div>
                         <a href="https://twitter.com/messages/compose" target="_blank">
-                        <i class="fa fa-twitter hvr-pulse" style="color: lightblue"></i>
+                        <i class="fab fa-twitter fa-3x hvr-pulse" style="color: lightblue"></i>
                         </a>
                     </div>
             
@@ -176,7 +260,7 @@
             <div class="flex">
                 <div id="slack">
                         <a href="https://app.slack.com/client/TL6DE3YMA/CL6DE41L4" target="_blank">
-                            <i class="fa fa-slack hvr-pulse" style="color: rgb(6, 172, 6)"></i>
+                            <i class="fab fa-slack fa-3x hvr-pulse" style="color: rgb(6, 172, 6)"></i>
                             </a>
                 </div>
                    
@@ -185,24 +269,61 @@
                 <div class="flex">
                     <div id="gmail"></div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
-                        <i class="fa fa-google hvr-pulse" style="color: red"></i>
+                        <i class="fab fa-google fa-3x hvr-pulse" style="color: red"></i>
                         </a>
                     </div>
                     <!-- linkin icon and link to messages -->
                     <div class="flex">
                         <div id="linkedIn"></div>
                             <a href="https://www.linkedin.com/messaging/compose/" target="_blank">
-                            <i class="fa fa-linkedin hvr-pulse" style="color: white"></i>
+                            <i class="fab fa-linkedin fa-3x hvr-pulse" style="color: white"></i>
                             </a>
                         </div>
                     <div class="flex">
                         <div id="discord"></div>
                                 <a href="https://www.reddit.com/submit" target="_blank">
-                                <i class="fa fa-reddit hvr-pulse" style="color: rgb(223, 147, 6)"></i>
+                                <i class="fab fa-reddit fa-3x hvr-pulse" style="color: rgb(223, 147, 6)"></i>
                                 </a>
                             </div>
         </div>
     </div>
+    <div class="modal-icons">
+        <div class="flex-container" style="background: rgb(75, 66, 66)">
+            <div class="flex">
+                    <div id="Facebook"></div>
+                            <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fab fa-facebook fa-3x hvr-pulse" style="color: rgb(223, 147, 6)"></i>
+                            </a>
+                        </div>
+            <div class="flex">
+                            <div id="FacebookMesg"></div>
+                                    <a href="https://www.messenger.com/new" target="_blank">
+                                    <i class="fab fa-facebook-messenger fa-3x hvr-pulse" style="color: rgb(179, 11, 179)"></i>
+                                    </a>
+                                </div>
+             <div class="flex">
+                            <div id="Remind"></div>
+                                      <a href="https://www.remind.com/classes/dfell2024/messages/" target="_blank">
+                                        <img src="Remind.png" class="img hvr-pulse" alt="...">
+                                         </a>
+                                     </div>
+            
+             <div class="flex">
+                            <div id="Edmodo"></div>
+                                      <a href="https://www.remind.com/classes/dfell2024/messages/" target="_blank">
+                                        <img src="Edmodo1.png" class="img1 hvr-pulse" style="color: white" alt="...">
+                                         </a>
+                                             </div>
+             <div class="flex">
+                            <div id="Outlook"></div>
+                                     <a href="https://outlook.office365.com/mail/inbox" target="_blank">
+                                        <img src="outlook.png" class="img hvr-pulse" style="color: white" alt="...">
+                                        </a>
+                                            </div>
+    </div>
+    </div>
 
 </body>
 </html>
+
+<!-- <i class="fab fa-facebook-messenger"></i> -->
