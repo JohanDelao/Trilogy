@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name":"Trilogy Url Copier",
     "description": "Quick Url Copy",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {"128": "TrilogyV2_128x128.png"},
     "content_security_policy":"script-src 'self' https://www.gstatic.com/ https://www.googleapis.com https://kit.fontawesome.com/b2a17ff2c4.js ; object-src 'self'",
     "browser_action": {
