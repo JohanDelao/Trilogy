@@ -1,10 +1,11 @@
+// Gets the URL and then displays it in the textbox in the Middle section
 chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     var url = tabs[0].url;
     let link = document.getElementById("inputLink")
     link.value = url;
 });
 
-
+// When the user clicks on one of the logos, it will copy the url.
 $("a").click(function(){
 
         /* Get the text field */
@@ -19,17 +20,18 @@ $("a").click(function(){
 
 })
 
-$("#copyButton").click(function(){
-    /* Get the text field */
-    var copyText = document.getElementById("inputLink");
+// $("#copyButton").click(function(){
+//     /* Get the text field */
+//     var copyText = document.getElementById("inputLink");
       
-    /* Select the text field */
-    copyText.select();
+//     /* Select the text field */
+//     copyText.select();
   
-    /* Copy the text inside the text field */
-    document.execCommand("copy");
+//     /* Copy the text inside the text field */
+//     document.execCommand("copy");
 
-})
+// })
+
 
 $("#youngGrasshopper").click(function(){
      /* Get the text field */
