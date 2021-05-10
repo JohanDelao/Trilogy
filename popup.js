@@ -20,19 +20,7 @@ $("a").click(function(){
 
 })
 
-// $("#copyButton").click(function(){
-//     /* Get the text field */
-//     var copyText = document.getElementById("inputLink");
-      
-//     /* Select the text field */
-//     copyText.select();
-  
-//     /* Copy the text inside the text field */
-//     document.execCommand("copy");
-
-// })
-
-
+// When user clicks copy button in middle section, it copys the current url.
 $("#youngGrasshopper").click(function(){
      /* Get the text field */
      var copyText = document.getElementById("inputLink");
@@ -48,6 +36,7 @@ $("#youngGrasshopper").click(function(){
 
 })
 
+// Code for dark mode from website
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
 function switchTheme(e) {
