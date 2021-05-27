@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trilogy Url Copier</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900" type="text/css">
     <link rel="stylesheet" href="hover.css">
     <link rel="stylesheet" href="popup.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -20,10 +20,10 @@
 </head>
 <body>
     <!-- Start of Top Heading -->
-    <div class="modal-header">
-        <h1 class="logo">
-            <img src="images/TrilogyV2_150x150.png" alt="" class="logo-icon" style="margin-right: 24px"> Trilogy 
-            Url Copier
+    <div class="header">
+        <div class="headerText">
+            <h1><span id="trilogy">Trilogy  </span><span id="urlCopier">URL  Copier</span> </h1>
+        </div> 
             <div class="row">
                 <div class="col-8">
                 <span class="version">(1.0.1)</span>
@@ -46,7 +46,6 @@
                       </label>
                     </div>
                 </div>
-
             </div>
             </div>
         </div>
@@ -63,7 +62,6 @@
         </div>
         <form>
                 <div class="form-group row">
-                  <label for="inputEmail3" style="color: var(--font-color)" class="col-sm-2 col-form-label">Url</label>
                   <div class="row"></div>  
                   <div class="col-sm-10">
                       <!-- Where current URL will be displayed -->
@@ -71,9 +69,11 @@
                   </div>
                   <div class="col-sm-2">
                       <!-- Copy URL button -->
-                        <i id="youngGrasshopper" class="fa fa-file-text hvr-pulse" style="font-size:24px; color: var(--font-color);"></i>
+                      <button id="youngGrasshopper">Copy</button>
                     </div>
+                
                 </div>
+                <p>Find it, Copy it, Send it</p>
             </form>
     </div>
      <!-- End of Middle Section -->
@@ -144,21 +144,21 @@
              <div class="flex">
                             <div id="Remind"></div>
                                       <a href="https://www.remind.com/classes/dfell2024/messages/" target="_blank">
-                                        <img src="Remind.png" class="img hvr-pulse" alt="...">
+                                        <img src="images/appLogos/Remind.png" class="img hvr-pulse" alt="...">
                                          </a>
                                      </div>
-            <!-- Edmodo icon and link to messages -->
+            <!-- Discord icon and link to messages -->
              <div class="flex">
-                            <div id="Edmodo"></div>
-                                      <a href="https://www.remind.com/classes/dfell2024/messages/" target="_blank">
-                                        <img src="Edmodo1.png" class="img1 hvr-pulse" style="color: white" alt="...">
+                            <div id="Discord"></div>
+                                      <a href="https://discord.com/channels/@me" target="_blank">
+                                        <i class="fab fa-discord fa-3x hvr-pulse" style="color: rgb(127, 127, 233)"></i>
                                          </a>
                                              </div>
             <!-- Outlook icon and link to messages -->
              <div class="flex">
                             <div id="Outlook"></div>
                                      <a href="https://outlook.office365.com/mail/inbox" target="_blank">
-                                        <img src="outlook.png" class="img hvr-pulse" style="color: white" alt="...">
+                                        <img src="images/appLogos/outlook.png" class="img hvr-pulse" style="color: white" alt="...">
                                         </a>
                                             </div>
     </div>
