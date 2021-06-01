@@ -10,8 +10,8 @@
 }
 /* Color Scheme for Dark Mode */
 [data-theme="dark"] {
-  --primary-color: rgb(78, 78, 78);
-  --secondary-color: #3a3a3a;
+  --primary-color:  #00005c;
+  --secondary-color: #00005c;
   --font-color: #e9e9e9;
   --bg-color: #161625;
   --heading-color: #818cab;
@@ -255,9 +255,9 @@ input:checked + .slider:before {
 /* End of Code for Dark Mode */
 
 /* Style The Dropdown Button  */
-.dropbtn {
+a.settingBtn {
 background-color: transparent;
-color: white;
+color: var(--font-color);
 font-size: 16px;
 border: none;
 cursor: pointer;
@@ -304,4 +304,13 @@ display: block;
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
 background-color: var(--hover-color);
+}
+
+/* Beginning of css for setting page */
+a.backArrowBtn {
+  background-color: transparent;
+color: var(--font-color);
+font-size: 16px;
+border: none;
+cursor: pointer;
 }
